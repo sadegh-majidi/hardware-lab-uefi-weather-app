@@ -1,0 +1,12 @@
+Build/
+build/
+*.efi
+*.debug
+*.o
+*.vhd
+*.sdf
+*.suo
+*.opensdf
+*.opendb
+*.fd
+*.db*
