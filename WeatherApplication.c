@@ -1,6 +1,7 @@
 #include <Uefi.h>
 #include <Library/UefiApplicationEntryPoint.h>
 #include <Library/UefiLib.h>
+#include <Library/UefiBootServicesTableLib.h>
 
 /**
   as the real entry point for the application.
@@ -19,7 +20,8 @@ UefiMain (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 {
-  Print(L"Hello World \n"); 
+  Print(L"Hello World \n");
+  gBS->Stall (30000000);
   return EFI_SUCCESS;
 }
 
