@@ -79,6 +79,8 @@
   MmUnblockMemoryLib|MdePkg/Library/MmUnblockMemoryLib/MmUnblockMemoryLibNull.inf
   VariableFlashInfoLib|MdeModulePkg/Library/BaseVariableFlashInfoLib/BaseVariableFlashInfoLib.inf
   IpmiCommandLib|MdeModulePkg/Library/BaseIpmiCommandLibNull/BaseIpmiCommandLibNull.inf
+  HttpLib|NetworkPkg/Library/DxeHttpLib/DxeHttpLib.inf
+  NetLib|NetworkPkg/Library/DxeNetLib/DxeNetLib.inf
 
 [LibraryClasses.EBC.PEIM]
   IoLib|MdePkg/Library/PeiIoLibCpuIo/PeiIoLibCpuIo.inf

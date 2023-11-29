@@ -19,28 +19,30 @@ UEFI_HII_RESOURCE_SECTION      = TRUE
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   NetworkPkg/NetworkPkg.dec
-  ShellPkg/ShellPkg.dec
 
 [LibraryClasses]
   UefiApplicationEntryPoint
   UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
   UefiLib
   PcdLib
-  ShellLib
-  NetLib
+  HttpLib
   MemoryAllocationLib
 
 [Guids]
+  gEfiTlsCaCertificateGuid
 
 [Ppis]
 
 [Protocols]
   gEfiHttpProtocolGuid
   gEfiHttpUtilitiesProtocolGuid
+  gEfiHttpServiceBindingProtocolGuid
 
 [FeaturePcd]
 
 [Pcd]
+  gEfiNetworkPkgTokenSpaceGuid.PcdAllowHttpConnections
 
 [UserExtensions.TianoCore."ExtraFiles"]
   WeatherApplication.uni
