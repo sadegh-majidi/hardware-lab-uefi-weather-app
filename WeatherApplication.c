@@ -289,7 +289,7 @@ UefiMain (
     RequestHeaders[0].FieldName = "Host";
     RequestHeaders[0].FieldValue = "weather.aghayesefid.ir";
     RequestHeaders[1].FieldName = "Auth";
-    RequestHeaders[1].FieldValue = "6be97fd4-188a-4c9a-a778-4f0aec7122f4";
+    RequestHeaders[1].FieldValue = "Token";
 
     // Message format just contains a pointer to the request data
     // and body info, if applicable. In the case of HTTP GET, body
